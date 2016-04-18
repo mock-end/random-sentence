@@ -26,5 +26,9 @@ module.exports = function (min, max) {
     words.push(randomLorem());
   }
 
+  var firstWorld = words[0];
+
+  words[0] = firstWorld[0].toUpperCase() + firstWorld.substr(1);
+
   return words.join(' ') + '.';
 };
