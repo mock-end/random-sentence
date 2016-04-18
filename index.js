@@ -26,5 +26,5 @@ module.exports = function (min, max) {
     words.push(randomLorem());
   }
 
-  return words.join(' ');
+  return words.join(' ') + '.';
 };
