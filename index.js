@@ -18,7 +18,7 @@ module.exports = function (min, max) {
   }
 
   length = randomNatural(min, max);
-  length = clamp(length, 1, 10);
+  length = clamp(length, 1, 20);
 
   var words = [];
 
