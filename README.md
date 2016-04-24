@@ -1,6 +1,6 @@
 # random-sentence
 
-> Return a random sentence.
+> Return a random sentence populated by semi-pronounceable random (nonsense) words.
 
 
 [![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/mock-end/random-sentence/blob/master/LICENSE)
@@ -58,9 +58,10 @@ randomSentence(5, 5); // should only have 5 worlds.
 
 ## Related
 
-- [random-lorem](https://github.com/mock-end/random-lorem) - Return a random lorem world.
-- [random-title](https://github.com/mock-end/random-title) - Return a random title.
-- [random-paragraph](https://github.com/mock-end/random-paragraph) - Return a random paragraph.
+- [random-syllable](https://github.com/mock-end/random-syllable) - Return a semi-speakable syllable, 2 or 3 letters.
+- [random-lorem](https://github.com/mock-end/random-lorem) - Return a semi-pronounceable random (nonsense) word.
+- [random-title](https://github.com/mock-end/random-title) - Return a random title populated by semi-pronounceable random (nonsense) words.
+- [random-paragraph](https://github.com/mock-end/random-paragraph) - Return a random paragraph generated from sentences populated by semi-pronounceable random (nonsense) words.
 
 ## Contributing
 

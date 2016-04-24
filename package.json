@@ -1,11 +1,8 @@
 {
   "name": "random-sentence",
   "version": "1.0.1",
-  "description": "Return a random sentence.",
+  "description": "Return a random sentence populated by semi-pronounceable random (nonsense) words.",
   "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
     "lint": "jshint index.js",
     "pretest": "npm run lint",
@@ -16,9 +13,10 @@
   },
   "keywords": [
     "sentence",
-    "title",
     "world",
+    "title",
     "article",
+    "nonsense",
     "random",
     "randomly",
     "randomize",
@@ -49,7 +47,7 @@
   },
   "dependencies": {
     "clamp": "^1.0.1",
-    "random-lorem": "^1.0.1",
+    "random-lorem": "^1.0.2",
     "random-natural": "^1.0.2"
   }
 }
