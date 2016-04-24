@@ -41,7 +41,6 @@ Can optionally provide max, and the worlds count would be between `2` and `max`:
 ```js
 randomSentence(8);
 // => Fusce dapibus tellus ac cursus commodo.
-// => asdjlk
 ```
 
 Can optionally provide both min and max:
