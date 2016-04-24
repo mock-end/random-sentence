@@ -1,6 +1,6 @@
 {
   "name": "random-sentence",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Return a random sentence populated by semi-pronounceable random (nonsense) words.",
   "main": "index.js",
   "scripts": {
