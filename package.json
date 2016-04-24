@@ -1,7 +1,7 @@
 {
   "name": "random-sentence",
   "version": "1.0.1",
-  "description": "Generate a random sentence.",
+  "description": "Return a random sentence.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -19,14 +19,13 @@
     "title",
     "world",
     "article",
-    "lorem",
-    "randomly",
     "random",
-    "rand",
-    "sampling",
-    "generator",
-    "generate",
-    "gen"
+    "randomly",
+    "randomize",
+    "chance",
+    "test",
+    "dice",
+    "mock"
   ],
   "license": "MIT",
   "author": {
@@ -50,7 +49,7 @@
   },
   "dependencies": {
     "clamp": "^1.0.1",
-    "random-lorem": "^1.0.0",
-    "random-natural": "^1.0.0"
+    "random-lorem": "^1.0.1",
+    "random-natural": "^1.0.2"
   }
 }

@@ -2,6 +2,8 @@
 
 var expect = require('chai').expect;
 
+var MIN_LEN = 2;
+var MAX_LEN = 20;
 
 describe('random-sentence: ', function () {
 
@@ -11,13 +13,13 @@ describe('random-sentence: ', function () {
     expect(randomSentence()).to.be.a('string');
 
     for (var i = 0; i < 100; i++) {
-      expect(randomSentence().split(' ')).to.have.length.within(1, 20);
+      expect(randomSentence().split(' ')).to.have.length.within(MIN_LEN, MAX_LEN);
     }
   });
 
 
   it('randomSentence(8)', function () {
-    expect(randomSentence(8).split(' ')).to.have.length.within(1, 8);
+    expect(randomSentence(8).split(' ')).to.have.length.within(MIN_LEN, 8);
   });
 
   it('randomSentence(8, 8)', function () {

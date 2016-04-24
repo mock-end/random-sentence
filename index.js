@@ -4,21 +4,24 @@ var clamp         = require('clamp');
 var randomNatural = require('random-natural');
 var randomLorem   = require('random-lorem');
 
+var MIN_LEN = 2;
+var MAX_LEN = 20;
 
 module.exports = function (min, max) {
 
   var length = arguments.length;
 
   if (length === 0) {
-    min = 1;
-    max = 20;
+    min = MIN_LEN;
+    max = MAX_LEN;
   } else if (length === 1) {
     max = min;
-    min = 1;
+    min = MIN_LEN;
   }
 
   length = randomNatural(min, max);
-  length = clamp(length, 1, 20);
+  length = clamp(length, MIN_LEN, MAX_LEN);
+
 
   var words = [];
 
