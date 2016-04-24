@@ -1,8 +1,8 @@
 'use strict';
 
 var clamp         = require('clamp');
-var randomNatural = require('random-natural');
 var randomLorem   = require('random-lorem');
+var randomNatural = require('random-natural');
 
 var MIN_LEN = 2;
 var MAX_LEN = 20;
