@@ -5,23 +5,34 @@ var randomLorem   = require('random-lorem');
 var randomNatural = require('random-natural');
 
 var MIN_LEN = 2;
-var MAX_LEN = 20;
+var MAX_LEN = 18;
 
-module.exports = function (min, max) {
+module.exports = function (options) {
 
-  var length = arguments.length;
+  options = options || {
+      words: randomNatural({
+        min: 12,
+        max: 18,
+        inspected: true
+      })
+    };
 
-  if (length === 0) {
-    min = MIN_LEN;
-    max = MAX_LEN;
-  } else if (length === 1) {
-    max = min;
-    min = MIN_LEN;
+  var length = options.words;
+
+  if (!length && (options.min || options.max)) {
+    length = randomNatural({
+      min: options.min || MIN_LEN,
+      max: options.max || MAX_LEN
+    });
   }
 
-  length = randomNatural(min, max);
-  length = clamp(length, MIN_LEN, MAX_LEN);
+  length = length || randomNatural({
+      min: MIN_LEN,
+      max: MAX_LEN,
+      inspected: true
+    });
 
+  length = clamp(length, MIN_LEN, MAX_LEN);
 
   var words = [];
 

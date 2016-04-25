@@ -1,6 +1,6 @@
 {
   "name": "random-sentence",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Return a random sentence populated by semi-pronounceable random (nonsense) words.",
   "main": "index.js",
   "scripts": {
@@ -13,8 +13,8 @@
   },
   "keywords": [
     "sentence",
-    "world",
     "title",
+    "world",
     "article",
     "nonsense",
     "random",
@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "clamp": "^1.0.1",
-    "random-lorem": "^1.0.3",
-    "random-natural": "^1.0.2"
+    "random-lorem": "^1.0.4",
+    "random-natural": "^1.0.3"
   }
 }
